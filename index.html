@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpookyEdu Games Hub 🎃</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #12002b 0%, #2a0845 100%);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+    header { text-align: center; margin-bottom: 2.5rem; }
+    h1 { font-size: 2.5rem; color: #ff7518; text-shadow: 0 0 10px rgba(255,117,24,0.5); margin-bottom: 0.5rem; }
+    p { font-size: 1.1rem; color: #d8b4fe; }
+    .grid {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 900px;
+      width: 100%;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid #ff7518;
+      border-radius: 16px;
+      padding: 1.5rem;
+      width: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(255, 117, 24, 0.3);
+    }
+    .card-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .card h2 { font-size: 1.4rem; color: #a855f7; margin-bottom: 0.5rem; }
+    .card p { font-size: 0.9rem; color: #cccccc; margin-bottom: 1.5rem; }
+    .btn {
+      display: inline-block;
+      background: #ff7518;
+      color: #ffffff;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      width: 100%;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #e06000; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎃 SpookyEdu Games Hub 👻</h1>
+    <p>Choose a game to play and practice your English!</p>
+  </header>
+
+  <main class="grid">
+    <!-- JOC 1 -->
+    <div class="card">
+      <div>
+        <div class="card-icon">🏰</div>
+        <h2>Halloween Quest</h2>
+        <p>Breakout & Logic Challenge (A2 Level)</p>
+      </div>
+      <!-- Assegura't que el nom de la carpeta coincideix exactament -->
+      <a class="btn" href="./halloween-quest/">PLAY GAME 🚀</a>
+    </div>
+
+    <!-- JOC 2 -->
+    <div class="card">
+      <div>
+        <div class="card-icon">🧪</div>
+        <h2>Game 2</h2>
+        <p>Interactive Spooky Activity</p>
+      </div>
+      <!-- CANVIA "nom-de-la-carpeta-2" Pel nom exactament com l'has escrit a GitHub -->
+      <a class="btn" href="./Drag&Drop/">PLAY GAME 🚀</a>
+    </div>
+  </main>
+
+</body>
+</html>
